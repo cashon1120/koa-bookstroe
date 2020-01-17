@@ -54,3 +54,108 @@
 2020-01-17 11:56:28: GET /stylesheets/style.css.map - 4ms
 2020-01-17 11:56:28:   --> GET /stylesheets/style.css.map 200 6ms 2.01kb
 2020-01-17 14:46:31: production
+2020-01-17 16:57:13: 80
+2020-01-17 16:57:26:   <-- GET /
+2020-01-17 16:57:26: GET /
+2020-01-17 16:57:26: 1
+2020-01-17 16:57:26: GET / - 167ms
+2020-01-17 16:57:26:   --> GET / 200 170ms 7.66kb
+2020-01-17 16:57:26:   <-- GET /stylesheets/style.css
+2020-01-17 16:57:26: GET /stylesheets/style.css - 3ms
+2020-01-17 16:57:26:   --> GET /stylesheets/style.css 200 7ms 2.34kb
+2020-01-17 16:57:27:   <-- GET /favicon.ico
+2020-01-17 16:57:27: GET /favicon.ico
+2020-01-17 16:57:27: 1
+2020-01-17 16:57:27: GET /favicon.ico - 3ms
+2020-01-17 16:57:27:   --> GET /favicon.ico 200 5ms 1.31kb
+2020-01-17 16:57:28:   <-- GET /
+2020-01-17 16:57:28: GET /
+2020-01-17 16:57:28: 1
+2020-01-17 16:57:28: GET / - 64ms
+2020-01-17 16:57:28:   --> GET / 200 64ms 7.66kb
+2020-01-17 16:57:28:   <-- GET /stylesheets/style.css
+2020-01-17 16:57:28: GET /stylesheets/style.css - 1ms
+2020-01-17 16:57:28:   --> GET /stylesheets/style.css 200 3ms 2.34kb
+2020-01-17 16:57:28:   <-- GET /favicon.ico
+2020-01-17 16:57:28: GET /favicon.ico
+2020-01-17 16:57:28: 1
+2020-01-17 16:57:28: GET /favicon.ico - 2ms
+2020-01-17 16:57:28:   --> GET /favicon.ico 200 4ms 1.31kb
+2020-01-17 16:57:29:   <-- GET /
+2020-01-17 16:57:29: GET /
+2020-01-17 16:57:29: 1
+2020-01-17 16:57:29: GET / - 70ms
+2020-01-17 16:57:29:   --> GET / 200 71ms 7.66kb
+2020-01-17 16:57:29:   <-- GET /stylesheets/style.css
+2020-01-17 16:57:29: GET /stylesheets/style.css - 2ms
+2020-01-17 16:57:29:   --> GET /stylesheets/style.css 200 3ms 2.34kb
+2020-01-17 16:57:29:   <-- GET /favicon.ico
+2020-01-17 16:57:29: GET /favicon.ico
+2020-01-17 16:57:29: 1
+2020-01-17 16:57:29: GET /favicon.ico - 3ms
+2020-01-17 16:57:29:   --> GET /favicon.ico 200 4ms 1.31kb
+2020-01-17 16:57:29:   <-- GET /
+2020-01-17 16:57:29: GET /
+2020-01-17 16:57:29: 1
+2020-01-17 16:57:29: GET / - 70ms
+2020-01-17 16:57:29:   --> GET / 200 71ms 7.66kb
+2020-01-17 16:57:29:   <-- GET /stylesheets/style.css
+2020-01-17 16:57:29: GET /stylesheets/style.css - 1ms
+2020-01-17 16:57:29:   --> GET /stylesheets/style.css 200 2ms 2.34kb
+2020-01-17 16:57:29:   <-- GET /favicon.ico
+2020-01-17 16:57:29: GET /favicon.ico
+2020-01-17 16:57:29: 1
+2020-01-17 16:57:29: GET /favicon.ico - 2ms
+2020-01-17 16:57:29:   --> GET /favicon.ico 200 2ms 1.31kb
+2020-01-17 16:57:29:   <-- GET /
+2020-01-17 16:57:29: GET /
+2020-01-17 16:57:29: 1
+2020-01-17 16:57:29: GET / - 64ms
+2020-01-17 16:57:29:   --> GET / 200 65ms 7.66kb
+2020-01-17 16:57:29:   <-- GET /stylesheets/style.css
+2020-01-17 16:57:29: GET /stylesheets/style.css - 1ms
+2020-01-17 16:57:29:   --> GET /stylesheets/style.css 200 2ms 2.34kb
+2020-01-17 16:57:29:   <-- GET /favicon.ico
+2020-01-17 16:57:29: GET /favicon.ico
+2020-01-17 16:57:29: 1
+2020-01-17 16:57:29: GET /favicon.ico - 3ms
+2020-01-17 16:57:29:   --> GET /favicon.ico 200 5ms 1.31kb
+2020-01-17 16:57:30:   <-- GET /
+2020-01-17 16:57:30: GET /
+2020-01-17 16:57:30: 1
+2020-01-17 16:57:30: GET / - 64ms
+2020-01-17 16:57:30:   --> GET / 200 64ms 7.66kb
+2020-01-17 16:57:30:   <-- GET /stylesheets/style.css
+2020-01-17 16:57:30: GET /stylesheets/style.css - 1ms
+2020-01-17 16:57:30:   --> GET /stylesheets/style.css 200 2ms 2.34kb
+2020-01-17 16:57:30:   <-- GET /favicon.ico
+2020-01-17 16:57:30: GET /favicon.ico
+2020-01-17 16:57:30: 1
+2020-01-17 16:57:30: GET /favicon.ico - 3ms
+2020-01-17 16:57:30:   --> GET /favicon.ico 200 4ms 1.31kb
+2020-01-17 16:57:30:   <-- GET /
+2020-01-17 16:57:30: GET /
+2020-01-17 16:57:30: 1
+2020-01-17 16:57:30: GET / - 64ms
+2020-01-17 16:57:30:   --> GET / 200 65ms 7.66kb
+2020-01-17 16:57:30:   <-- GET /stylesheets/style.css
+2020-01-17 16:57:30: GET /stylesheets/style.css - 1ms
+2020-01-17 16:57:30:   --> GET /stylesheets/style.css 200 2ms 2.34kb
+2020-01-17 16:57:30:   <-- GET /favicon.ico
+2020-01-17 16:57:30: GET /favicon.ico
+2020-01-17 16:57:30: 1
+2020-01-17 16:57:30: GET /favicon.ico - 2ms
+2020-01-17 16:57:30:   --> GET /favicon.ico 200 3ms 1.31kb
+2020-01-17 16:57:30:   <-- GET /
+2020-01-17 16:57:30: GET /
+2020-01-17 16:57:30: 1
+2020-01-17 16:57:30: GET / - 71ms
+2020-01-17 16:57:30:   --> GET / 200 71ms 7.66kb
+2020-01-17 16:57:30:   <-- GET /stylesheets/style.css
+2020-01-17 16:57:30: GET /stylesheets/style.css - 1ms
+2020-01-17 16:57:30:   --> GET /stylesheets/style.css 200 2ms 2.34kb
+2020-01-17 16:57:30:   <-- GET /favicon.ico
+2020-01-17 16:57:30: GET /favicon.ico
+2020-01-17 16:57:30: 1
+2020-01-17 16:57:30: GET /favicon.ico - 3ms
+2020-01-17 16:57:30:   --> GET /favicon.ico 200 4ms 1.31kb
