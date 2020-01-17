@@ -14,7 +14,7 @@ if (env === 'production') {
     port: 6379,
     host: '127.0.0.1'
   }
-  API_URL = 'http://localhost/basic/web/index.php?r='
+  API_URL = 'http://localhost:8080/basic/web/index.php?r='
 }
 
 
