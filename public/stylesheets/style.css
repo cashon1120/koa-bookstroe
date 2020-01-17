@@ -1,0 +1,124 @@
+body {
+  background: #f5f5f5; }
+
+body,
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  outline: none; }
+
+* {
+  transition: all .5s; }
+
+a {
+  color: #2ec07a;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+nav {
+  background: #171719;
+  margin-bottom: 30px; }
+  nav ul {
+    overflow: auto; }
+    nav ul li {
+      float: left; }
+      nav ul li a, nav ul li span {
+        display: inline-block;
+        padding: 15px;
+        color: #fff;
+        position: relative;
+        left: -15px;
+        margin-right: 30px;
+        text-align: center; }
+        nav ul li a:hover, nav ul li span:hover {
+          color: #2ec07a;
+          text-decoration: none; }
+      nav ul li.login-info {
+        float: right; }
+        nav ul li.login-info a {
+          margin: 0;
+          padding: 15px 0; }
+
+.main {
+  width: 80%;
+  margin: auto; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px; }
+  table td, table th {
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 10px; }
+    table td a, table th a {
+      margin-right: 10px; }
+
+.page {
+  overflow: auto;
+  margin-top: 30px; }
+  .page li {
+    text-align: center;
+    float: left;
+    margin-right: 10px; }
+    .page li a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      color: #666;
+      border: 1px solid #d2d2d2; }
+      .page li a.active {
+        background: #171719;
+        color: #fff;
+        border: 1px solid #171719; }
+        .page li a.active:hover {
+          background: #171719;
+          color: #fff;
+          border: 1px solid #171719; }
+      .page li a:hover {
+        background: #d2d2d2; }
+
+.success {
+  text-align: center;
+  color: #2ec07a;
+  width: 50%;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px; }
+  .success span {
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #2ec07a;
+    border-radius: 100%;
+    line-height: 100px; }
+  .success div {
+    padding-top: 30px; }
+  .success a {
+    margin: 15px; }
+
+.form-login {
+  width: 50%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 30px;
+  border-radius: 6px; }
+
+.form-tips {
+  width: 50%;
+  margin: auto; }
+
+.help-block {
+  color: #f00 !important; }
+
+/*# sourceMappingURL=style.css.map */
