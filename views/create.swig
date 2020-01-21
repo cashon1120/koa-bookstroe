@@ -99,7 +99,7 @@
     $('#file').on('change', e => {
        var params = new FormData();
        params.append('file',e.target.files[0])
-       axios.post('http://localhost:3001/upload',params, {headers:{'Content-Type':'multipart/form-data'}}).then(res => {
+       axios.post('http://localhost/upload',params, {headers:{'Content-Type':'multipart/form-data'}}).then(res => {
           const url = res.data.data.url
           $('#pic').val(url)
           $('#picUrl').show().attr('src', url)
