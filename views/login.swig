@@ -1,15 +1,16 @@
 {% extends './layout.html' %}
-{% block title %} index {% endblock %}
+{% block title %} 登录 {% endblock %}
 {% block content %}
     <div>
-        {% if type === 'notLogin' %}
+        {% if redirectPage %}
         <div class="form-tips">
             <div class="alert alert-danger" role="alert">
             该操作需要登录, 请先登录!
             </div>
         </div>
         {% endif %}
-        <form class="form-login" method="post" action="/login/loginIn">
+        <form class="form-login" method="post" action="/user/loginIn">
+            <input type="hidden" name="redirectPage" value="{{redirectPage}}">
             <div class="form-group">
                 <label for="username">账号</label>
                 <input type="text" class="form-control" name="username" id="username" aria-describedby="emailHelp" value="admin">

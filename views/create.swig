@@ -1,5 +1,5 @@
 {% extends './layout.html' %}
-{% block title %} index {% endblock %}
+{% block title %}新建图书{% endblock %}
 {% block content %}
 <script src="https://cdn.bootcss.com/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
 <link href="https://cdn.bootcss.com/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css" rel="stylesheet">

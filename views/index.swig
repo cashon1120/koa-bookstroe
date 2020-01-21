@@ -1,5 +1,5 @@
 {% extends './layout.html' %}
-{% block title %} 首页 {% endblock %}
+{% block title %}首页{% endblock %}
 {% block content %}
     <div>
         <table  cellspacing="0">

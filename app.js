@@ -61,11 +61,11 @@ app.use(session({
 app.use(require('koa-static')(__dirname + '/public'));
 
 // 打印请求用时
-app.use(async (ctx, next) => {
-  console.log(`${ctx.method}`, `${ctx.url}`);
-  await next()
-  console.log(`1`);
-})
+// app.use(async (ctx, next) => {
+//   console.log(`${ctx.method}`, `${ctx.url}`);
+//   await next()
+//   console.log(`1`);
+// })
 
 // routes definition
 app.use(index.routes(), index.allowedMethods());

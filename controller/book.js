@@ -1,15 +1,14 @@
-var axios = require('axios')
 var qs = require('qs')
-var config = require('../common/config')
+var http = require('../utils/request.js')
+var {SuccessModel, ErrorModel} = require('../model/resModel')
 
 // 获取列表
 const getList = async (ctx) => {
   const {
     page
   } = ctx.query
-  const url = config.API_URL + 'book/index&page=' + page
   let result = {}
-  await axios.get(url).then(res => {
+  await http.get('book/index&page=' + page).then(res => {
     let totalPage = Math.ceil(res.data.pageInfo.totalCount / res.data.pageInfo.defaultPageSize)
     let pageArr = []
     for (let i = 0; i < totalPage; i++) {
@@ -18,18 +17,25 @@ const getList = async (ctx) => {
     result = res.data
     result.totalPage = pageArr
     result.currentPage = page || 1
+  }).catch(() => {
+    return new ErrorModel()
   })
-  return result
+  return new SuccessModel(result)
 }
 
 // 新建数据
 const createData = async (ctx) => {
   const { id, name, author, price, isbn, remarks} = ctx.request.body
   let result = {}
-  const url = config.API_URL + 'book/create' 
+  const url = 'book/create' 
   const params = {id, name, author, price, isbn, remarks}
-  await axios.post(url, qs.stringify(params)).then(res => {
+  await http.post(url, qs.stringify(params)).then(res => {
     result = res.data
+    if(result.code === 1){
+      result = new SuccessModel()
+    }else{
+      result = new ErrorModel()
+    }
   })
   return result
 }
@@ -40,9 +46,14 @@ const deleteData = async (ctx) => {
     id
   } = ctx.query
   let result = {}
-  const url = config.API_URL + 'book/delete&id=' + id
-  await axios.get(url).then(res => {
+  const url = 'book/delete&id=' + id
+  await http.get(url).then(res => {
     result = res.data
+    if(result.code === 1){
+      result = new SuccessModel()
+    }else{
+      result = new ErrorModel()
+    }
   })
   return result
 }
@@ -53,9 +64,8 @@ const getDetail = async (ctx) => {
     id
   } = ctx.query
   let result = {}
-  const url = config.API_URL + 'book/create&id=' + id
-  await axios.get(url).then(res => {
-    console.log(res.data)
+  const url = 'book/create&id=' + id
+  await http.get(url).then(res => {
     result = res.data
   })
   return result

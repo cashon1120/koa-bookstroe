@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev ./node_modules/.bin/nodemon bin/www sass --watch public/stylesheets",
+    "dev": "cross-env NODE_ENV=dev ./node_modules/.bin/nodemon bin/www",
+    "debugger": "cross-env NODE_ENV=dev ./node_modules/.bin/nodemon --inspect bin/www",
     "prd": "cross-env NODE_ENV=production pm2 start pm2.conf.json",
     "watch-server": "tsc && nodemon --watch 'src/**/*' -e ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-ui": "./node_modules/mocha/bin/mocha tests/ui/*.test.js",
+    "test-api": "cross-env NODE_ENV=dev ./node_modules/mocha/bin/mocha tests/api/*.test.js"
   },
   "dependencies": {
     "axios": "^0.19.1",
@@ -26,6 +28,8 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "nodemon": "^1.19.1"
+    "mocha": "^7.0.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
   }
 }

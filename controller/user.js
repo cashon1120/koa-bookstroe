@@ -1,9 +1,17 @@
 const userLogin = async (ctx) => {
-  const { username, password} = ctx.request.body
-  let result = ''
+  const {
+    username,
+    password,
+    redirectPage
+  } = ctx.request.body
+  let result = {}
   if (username === 'admin' && password === '111111') {
     ctx.session.username = username
-    result = username
+    result = {
+      username,
+      redirectPage,
+      code: 1
+    }
   }
   return result
 }

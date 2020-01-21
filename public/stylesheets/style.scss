@@ -117,6 +117,9 @@ table{
   padding: 40px;
   border: 1px solid $borderColor;
   border-radius: 10px;
+  h1.error{
+    color: #f00;
+  }
   span{
     font-size: 40px;
     width: 100px;

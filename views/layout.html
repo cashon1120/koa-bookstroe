@@ -16,7 +16,7 @@
       <li><a href="/index">图书列表</a></li>
       <li><a href="/create">添加图书</a></li>
       <li class="login-info">
-        <a id="noLogin" href="/login">登录</a>
+        <a id="noLogin" href="/user/login">登录</a>
         <div id="isLogin" style="display: none;">
           <span id="userName"></span>
           <a href="javascript:" id="loginOut">退出</a>
@@ -28,19 +28,6 @@
     {% block content %}{% endblock  %}
   </div>
 </body>
-<script>
-  const username = localStorage.getItem('username')
-  $('#loginOut').click(() => {
-    localStorage.removeItem('username')
-    window.location.href='/login/logout'
-  })
-  console.log(username)
-  window.addEventListener('load', () => {
-    if(username){
-      $('#noLogin').hide()
-      $('#isLogin').show()
-      $('#userName').text(username)
-    }
-  })
-</script>
+<script src="/dist/system.js"></script>
+<script>System.import('/javascripts/getUser.js')</script> 
 </html>
