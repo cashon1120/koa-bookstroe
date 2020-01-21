@@ -25,10 +25,10 @@ const getList = async (ctx) => {
 
 // 新建数据
 const createData = async (ctx) => {
-  const { id, name, author, price, isbn, remarks} = ctx.request.body
+  const { id, name, author, price, pic, isbn, remarks} = ctx.request.body
   let result = {}
   const url = 'book/create' 
-  const params = {id, name, author, price, isbn, remarks}
+  const params = {id, name, author, price, pic, isbn, remarks}
   await http.post(url, qs.stringify(params)).then(res => {
     result = res.data
     if(result.code === 1){

@@ -2,6 +2,7 @@
 .sass-cache
 node_modules
 logs
+public/upload
 
 /dist
 /build

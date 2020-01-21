@@ -19,8 +19,20 @@
         </div>
         <div class="form-group">
             <label for="ISBN">ISBN</label>
-            <input type="text" class="form-control" iid="isbn" name="isbn" vaLue="{{data.isbn}}">
+            <input type="text" class="form-control" id="isbn" name="isbn" vaLue="{{data.isbn}}">
         </div>
+         <div class="form-group">
+            <label for="file">封面图</label>
+            <div>
+            {% if data.id %}
+               <img style="display: inline-block; width: 50px; height: 50px;" src="{{data.pic}}" id="picUrl" />
+            {% else %}
+               <img style="display: none; width: 50px; height: 50px;" src="{{data.pic}}" id="picUrl" /> 
+            {% endif %}   
+            <input type="file" style="display:inline-block; width: 50%;" name="file" id="file" class="form-control-file" accept="image/png,image/gif,image/jpeg">
+            <input type="hidden" name="pic" id="pic" value="">
+            </div>
+         </div>
         <div class="form-group">
             <label for="remarks">备注</label>
             <textarea class="form-control" id="remarks" name="remarks">{{data.remarks}}</textarea>
@@ -29,6 +41,7 @@
         <button type="submit" class="btn btn-primary">提交</button>
     </form>
 
+   <script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.js"></script>
     <script>
     $("#addForm").bootstrapValidator({
       fields: {
@@ -64,6 +77,14 @@
                }
             }
          },
+          file: {
+            message: '封面图验证失败',
+            validators: {
+               notEmpty: {
+                  message: '请上传封面图'
+               }
+            }
+         },
          remarks: {
             message: '备注验证失败',
             validators: {
@@ -74,5 +95,16 @@
          }
       }
     })
+
+    $('#file').on('change', e => {
+       var params = new FormData();
+       params.append('file',e.target.files[0])
+       axios.post('http://localhost:3001/upload',params, {headers:{'Content-Type':'multipart/form-data'}}).then(res => {
+          const url = res.data.data.url
+          $('#pic').val(url)
+          $('#picUrl').show().attr('src', url)
+       })
+    })  
+
     </script>
 {% endblock %}

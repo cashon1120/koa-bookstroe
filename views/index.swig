@@ -9,6 +9,7 @@
                 <th>作者</th>
                 <th>ISBN</th>
                 <th>价格</th>
+                <th>封面</th>
                 <th>描述</th>
                 <th>上传时间</th>
                 <th width="150">操作</th>
@@ -21,6 +22,7 @@
                     <td>{{item.author}}</td>
                     <td>{{item.price}}</td>
                     <td>{{item.isbn}}</td>
+                    <td><img src="{{item.pic}}" width="50" height="50" /></td>
                     <td>{{item.remarks}}</td>
                     <td>{{item.create_time}}</td>
                     <td><a href="/update?id={{item.id}}">修改</a><a href="javascript:" class="delete" data-id="{{item.id}}">删除</a></td>

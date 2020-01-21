@@ -17,7 +17,6 @@ if (env === 'production') {
   API_URL = 'http://localhost:8080/basic/web/index.php?r='
 }
 
-
 module.exports = {
   API_URL,
   REDIS_CONF
